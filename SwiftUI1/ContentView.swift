@@ -10,7 +10,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack{
+            
+            Text("Profile")
+                .font(.largeTitle)
+                .foregroundColor(Color.green)
+            
+            Spacer(minLength: 20)
+            
+            Image("profile")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(20)
+                .shadow(radius: 10)
+                .padding()
+            
+            Spacer(minLength: 20)
+            
+            Text("Rohit Saini")
+                .font(.title)
+                .foregroundColor(Color.red)
+            HStack{
+                Text("IOS Developer")
+                    .font(.body)
+                    .foregroundColor(.gray)
+            }
+        }
     }
 }
 
